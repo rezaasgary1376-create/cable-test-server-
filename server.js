@@ -2,8 +2,7 @@ const express = require('express');
 const sqlite3 = require('sqlite3').verbose();
 
 const app = express();
-const PORT = process.env.PORT || 10000;
-
+const PORT = process.env.PORT || 8080; // یا هر عدد دلخواه دیگر
 app.use(express.json());
 
 const db = new sqlite3.Database('cable_tests.db');
